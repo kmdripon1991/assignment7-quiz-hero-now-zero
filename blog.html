@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-16">
+    <!-- Differences of .map(), .forEach(), .filter(), .find() methods start -->
+    <section>
+        <h1 class="font-bold text-4xl text-gray-700">Differences of .map(), .forEach(), .filter(), .find() methods</h1>
+        <div class="overflow-x-auto pt-5">
+            <table class="table table-xs">
+                <thead>
+                    <tr>
+                        <th class="border-2 border-black">Method</th> 
+                        <th class="border-2 border-black">.map()</th> 
+                        <th class="border-2 border-black">.forEach()</th> 
+                        <th class="border-2 border-black">.filter()</th> 
+                        <th class="border-2 border-black">.find()</th> 
+                    </tr>
+              </thead> 
+              <tbody>
+                    <tr>
+                        <th class="border-2 border-black">Purpose</th> 
+                        <td class="border-2 border-black">Do something for each element in an array & constructs a new array</td> 
+                        <td class="border-2 border-black">Executes a provided function once for each array element</td> 
+                        <td class="border-2 border-black">Create a new array with elements meeting a condition</td> 
+                        <td class="border-2 border-black">Find the first element satisfying a condition</td>
+                    </tr>
+                    <tr>
+                        <th class="border-2 border-black">Return Value</th> 
+                        <td class="border-2 border-black">A new array will be created on your callback function</td> 
+                        <td class="border-2 border-black">undefined</td> 
+                        <td class="border-2 border-black">New array with matching elements. If any elements have not passed the test, return an empty array.</td> 
+                        <td class="border-2 border-black">First matching element. Otherwise return value is undefined</td>
+                    </tr>
+                    <tr>
+                        <th class="border-2 border-black">Example</th> 
+                        <td class="border-2 border-black">const numbers = [1, 2, 3, 4]<br>
+                            const result = numbers.map(n => n * 2)<br>
+                            result : [1, 4, 6, 8]
+                        </td> 
+                        <td class="border-2 border-black">const array = ['a', 'b', 'c'];
+                            array.forEach((element) => console.log(element)); <br>
+                            result: <br> a <br>b <br>c 
+                        </td> 
+                        <td class="border-2 border-black">const numbers = [10, 2, 32, 15]
+                            const result = numbers.filter(number => number > 2) <br>
+                            console.log(result) <br>
+                            result : [10, 32, 15]
+                        </td> 
+                        <td class="border-2 border-black">const numbers = [10, 2, 32, 15] <br>
+                            const result = numbers.find(number => number > 2) <br>
+                            console.log(result) <br>
+                            result: 10
+                        </td>
+                    </tr>
+                </tbody> 
+            </table>
+          </div>
+    </section>
+    <!-- Differences of .map(), .forEach(), .filter(), .find() methods end -->
+
+    <!-- Differences of localStorage, sessionStorage, cookie section start -->
+    <section class="mt-16">
+        <h1 class="font-bold text-4xl text-gray-700">Differences of localStorage, sessionStorage, cookie</h1>
+        <div class="overflow-x-auto pt-5">
+            <table class="table table-xs">
+                <thead>
+                    <tr>
+                        <th class="border-2 border-black"></th>
+                        <th class="border-2 border-black">localStorage</th> 
+                        <th class="border-2 border-black">sessionStorage</th> 
+                        <th class="border-2 border-black">cookie</th>
+                    </tr>
+              </thead> 
+              <tbody>
+                    <tr> 
+                        <th class="border-2 border-black">Storage Capacity</th>
+                        <td class="border-2 border-black">10MB</td> 
+                        <td class="border-2 border-black">5MB</td> 
+                        <td class="border-2 border-black">4Kb</td>
+                    </tr>
+                    <tr>
+                        <th class="border-2 border-black">Storage Location</th> 
+                        <td class="border-2 border-black">Browser Only</td> 
+                        <td class="border-2 border-black">Browser Only</td> 
+                        <td class="border-2 border-black">Browser & Server</td>
+                    </tr>
+                    <tr>
+                        <th class="border-2 border-black">Expiration</th>
+                        <td class="border-2 border-black">Manually set</td> 
+                        <td class="border-2 border-black">Never</td> 
+                        <td class="border-2 border-black">On Tab Close</td>
+                    </tr>
+                    <tr>
+                        <th class="border-2 border-black">Auto-expire option</th>
+                        <td class="border-2 border-black">Yes</td> 
+                        <td class="border-2 border-black">Yes</td> 
+                        <td class="border-2 border-black">No</td>
+                    </tr>
+                </tbody> 
+            </table>
+          </div>
+    </section>
+    <!-- Differences of localStorage, sessionStorage, cookie section end -->
+
+    <!-- event loop section start -->
+    <section class="mt-16">
+        <div>
+            <h1 class="font-bold text-4xl text-gray-700">What is event loop in JavaScript? How it works?</h1>
+            <p class="mt-5 font-normal text-xl">JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks.<br>The event queue pushes the tasks from the task queue to the call stack. At some point during the event loop, the runtime starts handling the messages on the queue, starting with the oldest one. Each message is processed completely before any other message is processed.</p>
+        </div>
+    </section>
+    <!-- event loop section end -->
+</body>
+</html>
