@@ -115,5 +115,23 @@
         </div>
     </section>
     <!-- event loop section end -->
+
+    <!-- quizTimer() details start -->
+    <section class="mt-16">
+        <div>
+            <h1 class="font-bold text-4xl text-gray-700">How does this function of quizTimer() work?</h1>
+            <p class="mt-5 font-normal text-xl"><span class="font-bold">quizTimer()</span>, is an array function. Its parameter is <span class="font-bold">dismiss</span>. If <span class="font-bold">dismiss</span> is the truthy value, the clearInterval() method is called on the intervalId returned by the setInterval() function.</p>
+        </div>
+    </section>
+    <!-- quizTimer() details end -->
+
+    <!-- chooseQuiz() details start -->
+    <section class="mt-16">
+        <div>
+            <h1 class="font-bold text-4xl text-gray-700">How does this function of chooseQuiz() work?</h1>
+            <p class="mt-5 font-normal text-xl">ChooseQuiz() is an array function. It has two parameters.The find() method is run on this array answers and the new array found is stored in the const isExist variable. If, if(isExist) is true then the let serial variable is set to 0 and a for loop is executed. This for loop is executed on answers. The if(isExist.id === quiz.id) condition is checked on each element of answers quiz. If quiz.id is equal to isExist.id then splice() method is executed on answers and break function is called. If(isExist.id === quiz.id) is not true then increment the value of serial by 1. And if(isExist) is not true then the function inside else will execute. Finally, the displayAnswer() function will be called whose parameter is answers.</p>
+        </div>
+    </section>
+    <!-- chooseQuiz() details end -->
 </body>
 </html>
