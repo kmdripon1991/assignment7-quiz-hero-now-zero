@@ -24,7 +24,7 @@ startQuiz.addEventListener("click", () => {
   let x = setInterval(() => {
     if (counterNum < 0) {
       countDown.classList.remove("flex");
-      countDown.classList.add("hidden");
+      coutDown.classList.add("hidden");
       counterNum = 3;
       count = 0;
       timer = null;
